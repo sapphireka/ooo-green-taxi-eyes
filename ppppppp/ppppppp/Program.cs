@@ -16,9 +16,10 @@ namespace ppppppp
             {
                 if (File.Exists(@"X:\one.txt"))
                   {
-                    while (s !=null)
-            string a; string b;
-            b = Console.ReadLine();
+                    while (s != null) { 
+            Console.WriteLine(s);
+            string a; string b = s;
+        //    b = Console.ReadLine();
             char[] bReverse = b.ToCharArray();
             Array.Reverse(bReverse);
             a = new string(bReverse);
@@ -27,6 +28,7 @@ namespace ppppppp
             if (string.CompareOrdinal(a,b)==0)
             { Console.WriteLine("its a polindrom"); }
             else { Console.WriteLine("its not polindrome"); }
+                    }
                 }
             }
         }
