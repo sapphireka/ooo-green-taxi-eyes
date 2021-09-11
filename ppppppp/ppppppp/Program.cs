@@ -11,7 +11,7 @@ namespace ppppppp
     {
         static void Main(string[] args)
         {
-            string[] lines = File.ReadAllLines(@"X:\one.txt");
+            string[] lines = File.ReadAllLines(@"X:\one.txt"); 
                 foreach (string s in lines)
             {
                 if (File.Exists(@"X:\one.txt"))
