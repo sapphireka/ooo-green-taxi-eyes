@@ -17,7 +17,6 @@ namespace ppppppp
                 if (File.Exists(@"X:\one.txt"))
                   {
                     while (s !=null)
-            Console.WriteLine();
             string a; string b;
             b = Console.ReadLine();
             char[] bReverse = b.ToCharArray();
