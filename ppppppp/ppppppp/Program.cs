@@ -19,7 +19,7 @@ namespace ppppppp
                     while (s != null) { 
             Console.WriteLine(s);
             string a; string b = s;
-        //    b = Console.ReadLine();
+        //   b = Console.ReadLine();
             char[] bReverse = b.ToCharArray();
             Array.Reverse(bReverse);
             a = new string(bReverse);
