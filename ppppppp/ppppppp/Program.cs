@@ -10,13 +10,17 @@ namespace ppppppp
     {
         static void Main(string[] args)
         {
-            Console.Write("enter word ");
-            var str = Console.ReadLine();
-            for (int i = 0; i < str.Length; ++i)
-                {
-                int left = i - 1; int right = i + 1;
-                
+            Console.Write("enter polindrom: ");
+            string a; string b;
+            b = Console.ReadLine();
+            char[] bReverse = b.ToCharArray();
+            Array.Reverse(bReverse);
+            a = new string(bReverse);
+            Console.Write("reverse: ");
+            Console.WriteLine(a);
+            if (string.CompareOrdinal(a,b)==0)
+            { Console.WriteLine("its a polindrom"); }
+            else { Console.WriteLine("its not polindrome"); }
             }
         }
     }
-}
