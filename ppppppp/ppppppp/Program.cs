@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.IO;
 
 namespace ppppppp
 {
@@ -10,7 +11,13 @@ namespace ppppppp
     {
         static void Main(string[] args)
         {
-            Console.Write("enter polindrom: ");
+            string[] lines = File.ReadAllLines(@"X:\one.txt");
+                foreach (string s in lines)
+            {
+                if (File.Exists(@"X:\one.txt"))
+                  {
+                    while (s !=null)
+            Console.WriteLine();
             string a; string b;
             b = Console.ReadLine();
             char[] bReverse = b.ToCharArray();
@@ -21,6 +28,8 @@ namespace ppppppp
             if (string.CompareOrdinal(a,b)==0)
             { Console.WriteLine("its a polindrom"); }
             else { Console.WriteLine("its not polindrome"); }
+                }
             }
         }
     }
+}
